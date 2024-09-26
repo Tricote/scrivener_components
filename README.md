@@ -1,5 +1,7 @@
 # ScrivenerComponents
 
+![CI](https://github.com/Tricote/scrivener_components/workflows/CI/badge.svg)
+
 <!-- MDOC !-->
 
 Pagination `Phoenix.Component` for the `Scrivener` library.
