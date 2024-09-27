@@ -20,8 +20,8 @@ jobs:
               otp: '27.0.1'
               elixir: '1.17.2'
           - versions:
-              otp: '25.2.3'
-              elixir: '1.15.8'
+              otp: '26.2.5.3'
+              elixir: '1.16.3'
 
     name: Test on OTP ${{matrix.versions.otp}} / Elixir ${{matrix.versions.elixir}}
     steps:
