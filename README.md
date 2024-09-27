@@ -4,7 +4,9 @@
 
 <!-- MDOC !-->
 
-Pagination `Phoenix.Component` for the `Scrivener` library.
+Pagination `Phoenix.Component` for the `Scrivener` library, compatible with Phoenix 1.7 and LiveViews.
+
+_This library is an alternative to [`scrivener_html`](https://github.com/mgwidmann/scrivener_html), which is no longer actively maintained and is not compatible with Phoenix 1.7 and live views (numerous forks have sprung up to correct this by including a dependency on `phoenix_html_helpers`...). It reuses part of the `scrivener_html` code, but it relies on `Phoenix.Component` to generate the pagination HTML code._
 
 ## Setup
 
@@ -29,6 +31,11 @@ defp html_helpers do
   end
 end
 ```
+
+Available framworks / modules:
+
+* Bootstrap V5: ` Scrivener.Components.BootstrapV5`
+* That's all for now...
 
 ## Usage
 
@@ -65,7 +72,3 @@ Where:
   - `last`: the text displayed for the last page link (default: `<<`)
   - `ellipsis`: the text to display when number of page is more than the distance, (default: `raw("&hellip;")`)
   - `distance`: the maximum number of page links around the current page to display in the pagination (default: `5`)
-
-## TODO
-
-- [ ] Implement other CSS framework pagination component (foundation, maetrialize,... )

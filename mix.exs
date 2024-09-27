@@ -6,7 +6,7 @@ defmodule ScrivenerComponents.MixProject do
     [
       app: :scrivener_components,
       version: @version,
-      elixir: "~> 1.16",
+      elixir: "~> 1.14",
       name: "scrivener_components",
       source_url: "https://github.com/Tricote/scrivener_components",
       homepage_url: "https://github.com/Tricote/scrivener_components",
@@ -39,7 +39,7 @@ defmodule ScrivenerComponents.MixProject do
     [
       {:scrivener, "~> 2.0"},
       {:phoenix_html, "~> 4.0"},
-      {:phoenix_live_view, "~> 0.20.2"},
+      {:phoenix_live_view, "~> 0.20"},
       {:ex_doc, "~> 0.34", only: :dev, runtime: false}
     ]
   end
