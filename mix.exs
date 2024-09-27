@@ -6,7 +6,7 @@ defmodule ScrivenerComponents.MixProject do
     [
       app: :scrivener_components,
       version: @version,
-      elixir: "~> 1.14",
+      elixir: "~> 1.15",
       name: "scrivener_components",
       source_url: "https://github.com/Tricote/scrivener_components",
       homepage_url: "https://github.com/Tricote/scrivener_components",
