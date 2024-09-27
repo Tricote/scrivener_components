@@ -34,7 +34,7 @@ end
 
 Available framworks / modules:
 
-* Bootstrap V5: ` Scrivener.Components.BootstrapV5`
+* Bootstrap V5: `Scrivener.Components.BootstrapV5`
 * That's all for now...
 
 ## Usage
@@ -68,7 +68,13 @@ Where:
 * `options` is a `Keyword` list that can be used to customize the behaviour of the pagination:
   - `previous`: the text displayed for the previous link (default: `<<`)
   - `next`: the text displayed for the previous link (default: `>>`)
-  - `first`: the text displayed for the first page link (default: `>>`)
-  - `last`: the text displayed for the last page link (default: `<<`)
+  - `first`:
+    - if `true` (default), display always display the first page link,
+    - if a `:string`, replace the page number (1) with the text (ex: `First`)
+    - if `false`, the first page is not displayed (if it is not in the distance from the current page...)
+  - `last`:
+    - if `true` (default), display always display the last page link,
+    - if a `:string`, replace the last page number with the text (ex: `Last`)
+    - if `false`, the last page is not displayed (if it is not in the distance from the current page...)
   - `ellipsis`: the text to display when number of page is more than the distance, (default: `raw("&hellip;")`)
   - `distance`: the maximum number of page links around the current page to display in the pagination (default: `5`)

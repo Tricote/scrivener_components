@@ -59,6 +59,8 @@ defmodule Scrivener.Components.BootstrapV5 do
       "a `Keyword` list that can be used to customize the behaviour of the pagination. See `Scrivener.Components.PaginationLinks` defaults"
   )
 
+  attr(:rest, :global)
+
   def pagination(assigns) do
     assigns =
       assigns
@@ -69,7 +71,7 @@ defmodule Scrivener.Components.BootstrapV5 do
       |> assign_new(:total_pages, fn %{page: page} -> page.total_pages end)
 
     ~H"""
-    <nav aria-label={"Pagination navigation"}>
+    <nav aria-label={"Pagination navigation"} {@rest}>
       <ul class="pagination">
         <%= for {text, page_number} <- PaginationLinks.raw_pagination_links(@page, @options) do %>
           <.page

@@ -2,18 +2,19 @@ defmodule ScrivenerComponents.MixProject do
   use Mix.Project
 
   @version "0.1.0"
+  @url "https://github.com/Tricote/scrivener_components"
   def project do
     [
       app: :scrivener_components,
       version: @version,
       elixir: "~> 1.15",
       name: "scrivener_components",
-      source_url: "https://github.com/Tricote/scrivener_components",
-      homepage_url: "https://github.com/Tricote/scrivener_components",
+      source_url: @url,
+      homepage_url: @url,
       elixirc_paths: elixirc_paths(Mix.env()),
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
-      description: "Phoenix pagination components for Scrivener",
+      description: "Phoenix pagination component for Scrivener",
       docs: [
         main: Scrivener.Components,
         readme: "README.md"
@@ -48,7 +49,7 @@ defmodule ScrivenerComponents.MixProject do
     [
       maintainers: ["Thibaut Decaudain"],
       licenses: ["MIT"],
-      links: %{github: "https://github.com/Tricote/scrivener_components"}
+      links: %{github: @url}
     ]
   end
 
