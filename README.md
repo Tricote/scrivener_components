@@ -1,6 +1,6 @@
 # ScrivenerComponents
 
-![CI](https://github.com/Tricote/scrivener_components/workflows/CI/badge.svg)
+![CI](https://github.com/Tricote/scrivener_components/workflows/CI/badge.svg) [![Hex Version](https://img.shields.io/hexpm/v/scrivener_components.svg?style=flat)](https://hex.pm/packages/scrivener_components) [![Hex docs](https://img.shields.io/badge/hex.pm-docs-green.svg?style=flat)](https://hexdocs.pm/scrivener_components)
 
 <!-- MDOC !-->
 
