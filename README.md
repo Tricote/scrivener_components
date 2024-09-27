@@ -57,6 +57,7 @@ You may customize and translate texts:
     next: gettext("Next"),
     previous: gettext("Previous")
   ]} />
+  data-custom-attr="hello"
 ```
 
 Where:
@@ -78,3 +79,4 @@ Where:
     - if `false`, the last page is not displayed (if it is not in the distance from the current page...)
   - `ellipsis`: the text to display when number of page is more than the distance, (default: `raw("&hellip;")`)
   - `distance`: the maximum number of page links around the current page to display in the pagination (default: `5`)
+* You may add additionals attributes to the pagination component (for JS integration for instance)
