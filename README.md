@@ -15,7 +15,7 @@ Add `:scrivener_components` to your project's dependencies:
 ```elixir
 def deps do
   [
-    {:scrivener_components, "~> 0.1.0"}
+    {:scrivener_components, "~> 0.1.1"}
   ]
 end
 ```

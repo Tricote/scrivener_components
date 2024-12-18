@@ -1,7 +1,7 @@
 defmodule ScrivenerComponents.MixProject do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
   @url "https://github.com/Tricote/scrivener_components"
   def project do
     [
@@ -40,7 +40,7 @@ defmodule ScrivenerComponents.MixProject do
     [
       {:scrivener, "~> 2.0"},
       {:phoenix_html, "~> 4.0"},
-      {:phoenix_live_view, "~> 0.20"},
+      {:phoenix_live_view, "~> 0.20 or ~> 1.0"},
       {:ex_doc, "~> 0.34", only: :dev, runtime: false}
     ]
   end
